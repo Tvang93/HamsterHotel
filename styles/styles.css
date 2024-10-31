@@ -21,7 +21,9 @@
     justify-content: center !important;
 }
 
-
+.width-100 {
+    width: 100%
+}
 /* General CSS end */
 
 /* NavBar CSS*/
@@ -173,6 +175,10 @@
 .bg-reserve-room {
     background: #000324 0% 0% no-repeat padding-box;
     opacity: 1;
+}
+
+#valet-icon {
+    height: 7.1875em;
 }
 
 #hamster-reserve {
