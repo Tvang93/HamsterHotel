@@ -223,7 +223,7 @@
 
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     
     /* Overview CSS*/
     #hamster-home {
@@ -270,7 +270,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     /* Overview CSS */
     #hamster-home {
         width: 100%;
@@ -282,7 +282,7 @@
     /* Overview End */
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
     /* Overview CSS */
     #hamster-home {
         width: 100%;
@@ -309,5 +309,23 @@
     }
     /* Overview End */
 
+    /*  */
+    .hero-1-text {
+        text-align: center;
+        font: normal normal normal 24px/28px Dosis;
+        letter-spacing: 0px;
+        color: #E5FEFF;
+        opacity: 1;
+    }
+    /* Hero 1 CSS End */
+
+    /* Footer CSS */
+    .footer-text {
+        font: normal normal normal 12px/16px Source Sans Pro;
+        letter-spacing: 0px;
+        color: #E5FEFF;
+        opacity: 1;
+    }
+    /* Footer End */
 
 }
