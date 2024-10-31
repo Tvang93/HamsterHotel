@@ -245,6 +245,10 @@
     }
     /* Package End */
     
+    .md-move-end {
+        display: flex;
+        justify-content: end;
+    }
 }
 
 
