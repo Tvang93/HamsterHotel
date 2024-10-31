@@ -205,13 +205,6 @@
 
 
 
-
-
-
-
-
-
-
 #hotel-logo {
     width: 8.9375em;
     height: 6.25em
@@ -225,24 +218,38 @@
 
 
 @media screen and (max-width: 992px) {
-    .room-card-height {
-        width: 100%;
-        height:100%;
-        object-fit: cover;
-    }
-
+    
+    /* Overview CSS*/
     #hamster-home {
         width: 100%;
         height: 27.5625em;
         object-fit: cover;
         object-position: 80% 60%;
         opacity: 1;
-    }
+    }    
+    /* Overview End*/
 
+    /* Rooms CSS */
+    .room-card-height {
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
+    /* Rooms End */
+
+    /* Package CSS */
+    .package-border {
+        border-style: solid;
+        border-color: rgb(0, 3, 36, 0.2);
+        border-width: 2px;
+    }
+    /* Package End */
+    
 }
 
 
 @media screen and (max-width: 768px) {
+    /* Overview CSS */
     #hamster-home {
         width: 100%;
         height: 18em;
@@ -250,4 +257,5 @@
         object-position: 80% 60%;
         opacity: 1;
     }
+    /* Overview End */
 }
