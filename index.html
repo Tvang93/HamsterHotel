@@ -18,19 +18,19 @@
     <div class="container-fluid d-none d-lg-block m-0 p-0">
         <ul class=" nav justify-content-center headfoot-bg align-items-end py-2">
             <li class="nav-item">
-                <a class="nav-link active nav-text" aria-current="page" href="#">Overview</a>
+                <a class="nav-link active nav-text" aria-current="page" href="#overview-section">Overview</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-text" href="#">Rooms</a>
+                <a class="nav-link nav-text" href="#rooms-section">Rooms</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-text" href="#">Packages</a>
+                <a class="nav-link nav-text" href="#packages-section">Packages</a>
             </li>
             <li class="nav-item">
                 <img src="./assets/Logo.png" alt="logo of la petite maison" class="pb-2">
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-text" href="#">Amenities</a>
+                <a class="nav-link nav-text" href="#amenities-section">Amenities</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link nav-text" href="#">Contact</a>
@@ -43,37 +43,50 @@
 
     <!-- Nav Bar collapsed -->
     <nav class="navbar navbar-expand-lg headfoot-bg d-sm-block d-lg-none">
-        <div class="container-fluid disp-center">
-            <div class="align-self-end">
+        <div class="container-fluid">
+            <div class="align-self-center">
                 <img src="./assets/Logo.png" alt="logo of la petite maison" class="navbar-toggler pb-2 me-5">
             </div>
-            <button class="navbar-toggler bg-white align-self-end ms-4" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler bg-white align-self-center ms-4" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link nav-text" href="#">Overview</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-text" href="#">Rooms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-text" href="#">Packages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-text" href="#">Amenities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-text" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-text" href="#">Reserve</a>
-                    </li>
-                </ul>
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header headfoot-bg">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><img src="./assets/Logo.png"
+                            alt="logo of la petite maison" class="pb-2"></h5>
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body headfoot-bg">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="#overview-section">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text d-none d-md-block" href="#rooms-responsive-section">Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text d-sm-block d-md-none" href="#rooms-section">Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="#packages-section">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="#amenities-section">Amenities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text" href="#">Reserve</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
+            
         </div>
     </nav>
 
@@ -97,7 +110,7 @@
     </div>
 
     <!-- Overview -->
-    <div class="container my-5 py-1">
+    <div class="container my-5 py-1" id="overview-section">
         <div class="row d-flex justify-content-center">
             <div class="col-md-6 col-xl-4 my-lg-5 d-flex justify-content-end">
                 <img src="./assets/hamsterhomejpg.jpg" alt="hamster sitting on a chair eating snowpeas"
@@ -130,7 +143,7 @@
     </div>
 
     <!-- Our Rooms -->
-    <div class="container-fluid d-md-none d-lg-block bg-img-bg2">
+    <div class="container-fluid d-md-none d-lg-block bg-img-bg2" id="rooms-section">
         <div class="row">
             <div class="col d-flex justify-content-center">
                 <div class="container hero-2-textbox mt-3 mt-md-5">
@@ -275,10 +288,10 @@
     </div>
 
     <!-- Our Rooms Tablet Responsive -->
-    <div class="container-fluid d-none d-md-block d-lg-none bg-img-bg2">
+    <div class="container-fluid d-none d-md-block d-lg-none bg-img-bg2" id="rooms-responsive-section">
         <div class="row">
             <div class="col d-flex justify-content-center">
-                <div class="container hero-2-textbox mt-5">
+                <div class="container mt-5">
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center">
                             <p class="our-rooms-header hero-1-text mb-0">Our Rooms</p>
@@ -393,24 +406,23 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-    </div>
+
 
     <!-- Packages -->
-    <div class="container">
+    <div class="container" id="packages-section">
         <div class="row">
             <div class="col d-flex justify-content-center">
-                <p class="our-rooms-header text-black mt-5">Packages</p>
+                <p class="our-rooms-header text-black mt-2 mt-sm-5">Packages</p>
             </div>
         </div>
-        <div class="row my-5 d-flex justify-content-center">
-            <div class="col-4 col-lg-5 px-0">
+        <div class="row my-0 my-sm-4 d-flex justify-content-center order-1 order-md-1">
+            <div class="col-md-4 col-lg-5 px-0">
                 <img src="./assets/hamsterwedding.jpg" alt="picture of hamster wedding" id="hamster-wedding"
                     class="package-pic-height">
             </div>
-            <div class="col-8 col-lg-5 package-border">
+            <div class="col-md-8 col-lg-5 package-border order-1 order-md-1">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -424,7 +436,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-8 col-lg-5 package-border">
+            <div class="col-md-8 col-lg-5 package-border order-2 order-md-1">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -438,15 +450,15 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 col-lg-5 px-0">
+            <div class="col-md-4 col-lg-5 px-0 order-1 order-md-1">
                 <img src="./assets/hamsterspring.jpg" alt="hamster with blooming flowers" id="hamster-spring"
                     class="package-pic-height">
             </div>
-            <div class="col-4 col-lg-5 px-0">
+            <div class="col-md-4 col-lg-5 px-0 order-2 order-md-1">
                 <img src="./assets/hamstercheese.jpg" alt="hamster with cheese" id="hamster-cheese"
                     class="package-pic-height">
             </div>
-            <div class="col-8 col-lg-5 package-border">
+            <div class="col-md-8 col-lg-5 package-border order-2 order-md-1">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -465,7 +477,7 @@
     </div>
 
     <!-- Amenities -->
-    <div class="container-fluid bg-img-bg1">
+    <div class="container-fluid bg-img-bg1" id="amenities-section">
         <div class="row">
             <div class="col">
                 <div class="container mt-md-5">
@@ -474,59 +486,62 @@
                             <p class="our-rooms-header">Amenities</p>
                         </div>
                         <div class="col-10 d-flex justify-content-center footer-text">
-                            <p class="text-center">Here at La Petite Maison, we invite you to enjoy our services in hopes that you have the
+                            <p class="text-center">Here at La Petite Maison, we invite you to enjoy our services in
+                                hopes that you have the
                                 most relaxing stay we can provide.</p>
                         </div>
-                        <div class="col-12 mt-lg-5">
+                        <div class="col-12 mt-md-5">
                             <div class="container">
                                 <div class="row d-flex justify-content-evenly">
-                                    <div class="col-5 col-md-2">
-                                        <div
-                                            class="container container d-flex justify-content-center align-content-center">
+                                    <div class="col-6 col-sm-5 col-md-2">
+                                        <div class="container">
                                             <div class="row ">
                                                 <div class="col d-flex justify-content-center align-content-center">
                                                     <img src="./assets/24hour.png" alt="plate with 24hr on it">
                                                 </div>
                                                 <div class="col-12">
-                                                    <p class="amenities-text text-center pt-3 pt-md-5">24 Hour Room Service</p>
+                                                    <p class="amenities-text text-center pt-3 pt-md-5 w-100">24 Hour
+                                                        Room Service</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-5 col-md-2">
-                                        <div
-                                            class="container container d-flex justify-content-center align-content-center">
+                                    <div class="col-6 col-sm-5 col-md-2">
+                                        <div class="container">
                                             <div class="row">
                                                 <div class="col d-flex justify-content-center align-content-center">
                                                     <img src="./assets/breakfast.png"
                                                         alt="spoon and fork with sun background">
                                                 </div>
                                                 <div class="col-12">
-                                                    <p class="amenities-text text-center pt-3 pt-md-5">Complimentary Breakfast</p>
+                                                    <p class="amenities-text text-center pt-3 pt-md-5">Complimentary
+                                                        Breakfast</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-5 col-md-2">
-                                        <div class="container d-flex justify-content-center align-content-center">
+                                    <div class="col-6 col-sm-5 col-md-2">
+                                        <div class="container">
                                             <div class="row">
                                                 <div class="col d-flex justify-content-center align-content-center">
                                                     <img src="./assets/valet.png" alt="valet" id="valet-icon">
                                                 </div>
                                                 <div class="col-12">
-                                                    <p class="amenities-text text-center pt-3 pt-md-5">Valet Parking</p>
+                                                    <p class="amenities-text text-center pt-3 pt-md-4 mt-md-3">Valet
+                                                        Parking</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-5 col-md-2">
-                                        <div class="container d-flex justify-content-center align-content-center">
+                                    <div class="col-6 col-sm-5 col-md-2">
+                                        <div class="container">
                                             <div class="row">
                                                 <div class="col d-flex justify-content-center align-content-center">
                                                     <img src="./assets/pool.png" alt="pool ladder">
                                                 </div>
                                                 <div class="col-12">
-                                                    <p class="amenities-text text-center pt-3 pt-md-5">Beachside Pool</p>
+                                                    <p class="amenities-text text-center pt-4 pt-md-5">Beachside Pool
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -541,7 +556,7 @@
     </div>
 
     <!-- Reserve a Room -->
-    <div class="container my-5 d-flex justify-content-center">
+    <div class="container my-5 d-flex justify-content-center" id="reserve-section">
         <div class="row d-flex justify-content-center">
             <div class="col-lg-10">
                 <div class="container-fluid bg-reserve-room">

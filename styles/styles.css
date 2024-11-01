@@ -14,16 +14,11 @@
     padding: 0;
 }
 
-.disp-center {
-    height: 120px;
-    display: flex !important;
-    flex-flow: column wrap;
-    justify-content: center !important;
-}
-
 .width-100 {
     width: 100%
 }
+
+
 /* General CSS end */
 
 /* NavBar CSS*/
@@ -271,6 +266,8 @@
 
 /* Media queries for small/phone */
 @media screen and (max-width: 767px) {
+
+
     /* Overview CSS */
     #hamster-home {
         width: 100%;
@@ -308,6 +305,14 @@
     /* Hero 1 CSS End */
 
     /* Our Room CSS */
+    .our-rooms-header {
+        text-align: center;
+        font: normal normal normal 28px/32px Dosis;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+
     .room-card-height {
         height: 5.25em;
         object-fit: cover;
@@ -322,6 +327,26 @@
         color: #1A1B26;
         opacity: 1;
     }
+
+    .package-border {
+        border-width: 0;
+    }
+
+    #hamster-wedding {
+        height: 7em;
+        object-position: 20% 30%;
+    }
+    
+    #hamster-spring {
+        height: 7em;
+        object-position: 70% 40%;
+    }
+    
+    #hamster-cheese {
+        height: 7em;
+        object-position: 60% 60%;
+    }
+    /* Package End */
     /* Package End */
 
     /* Amenities CSS */
