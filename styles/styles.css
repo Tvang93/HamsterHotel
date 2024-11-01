@@ -159,7 +159,7 @@
     color: #1F51A8;
     opacity: 1;
 }
-/* Packages CSS ENd */
+/* Packages CSS End */
 
 /* Amenities CSS */
 .bg-img-bg1 {
@@ -222,7 +222,7 @@
 
 
 
-
+/* Media queries for medium/tablet */
 @media screen and (max-width: 991px) {
     
     /* Overview CSS*/
@@ -269,24 +269,12 @@
     }
 }
 
-
+/* Media queries for small/phone */
 @media screen and (max-width: 767px) {
     /* Overview CSS */
     #hamster-home {
         width: 100%;
         height: 18em;
-        object-fit: cover;
-        object-position: 80% 60%;
-        opacity: 1;
-    }
-    /* Overview End */
-}
-
-@media screen and (max-width: 575px) {
-    /* Overview CSS */
-    #hamster-home {
-        width: 100%;
-        height: 15em;
         object-fit: cover;
         object-position: 80% 60%;
         opacity: 1;
@@ -309,7 +297,7 @@
     }
     /* Overview End */
 
-    /*  */
+    /* Hero 1 CSS */
     .hero-1-text {
         text-align: center;
         font: normal normal normal 24px/28px Dosis;
@@ -318,6 +306,41 @@
         opacity: 1;
     }
     /* Hero 1 CSS End */
+
+    /* Our Room CSS */
+    .room-card-height {
+        height: 5.25em;
+        object-fit: cover;
+    }
+    /* Our room End */
+
+    /* Package CSS */
+    .package-text-header {
+        text-align: left;
+        font: normal normal normal 18px/22px Dosis;
+        letter-spacing: 0px;
+        color: #1A1B26;
+        opacity: 1;
+    }
+    /* Package End */
+
+    /* Amenities CSS */
+    .amenities-text {
+        text-align: center;
+        font: normal normal bold 14px/18px Source Sans Pro;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+    /* Amenities End */
+
+    /* Reserve CSS */
+    #hamster-reserve {
+        width: 100%;
+        height: 13em;
+        object-fit: cover;
+    }
+    /* Reserve End */
 
     /* Footer CSS */
     .footer-text {
