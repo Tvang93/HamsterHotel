@@ -30,8 +30,18 @@
     opacity: 1;
 }
 
-.reserve-border {
+.nav-pos-responsive {
+    display: flex;
+    justify-content: center;
+}
+
+.hover-border {
+    border: transparent;
+}
+
+.hover-border:hover {
     border: 2px solid #E5FEFF;
+    color: #E5FEFF;
     opacity: 1;
 }
 /* NavBar CSS End */
@@ -219,6 +229,12 @@
 
 /* Media queries for medium/tablet */
 @media screen and (max-width: 991px) {
+    /* Nav CSS */
+    .nav-pos-responsive {
+        display: flex;
+        justify-content: start;
+    }
+    /* Nav End */
     
     /* Overview CSS*/
     #hamster-home {
