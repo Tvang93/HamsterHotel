@@ -65,9 +65,6 @@
                             <a class="nav-link nav-text" href="#overview-section">Overview</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-text d-none d-md-block" href="#rooms-responsive-section">Rooms</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link nav-text d-sm-block d-md-none" href="#rooms-section">Rooms</a>
                         </li>
                         <li class="nav-item">
@@ -85,8 +82,6 @@
                     </ul>
                 </div>
             </div>
-
-            
         </div>
     </nav>
 
@@ -106,7 +101,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <!-- Overview -->
@@ -143,10 +137,11 @@
     </div>
 
     <!-- Our Rooms -->
-    <div class="container-fluid d-md-none d-lg-block bg-img-bg2" id="rooms-section">
+    <div class="container-fluid bg-img-bg2" id="rooms-section">
         <div class="row">
             <div class="col d-flex justify-content-center">
-                <div class="container hero-2-textbox mt-3 mt-md-5">
+                <!-- room cards -->
+                <div class="container mt-3 mt-md-5  d-md-none d-lg-block">
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center">
                             <p class="our-rooms-header hero-1-text mb-0">Our Rooms</p>
@@ -178,11 +173,10 @@
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div class="col-3 col-md-12 px-0 px-md-2">
-                                                            <div class="container px-0">
-                                                                <a href="#"
-                                                                    class="btn btn-primary p-2 px-md-4 mt-lg-1 amenities-text no-curve">Reserve</a>
-                                                            </div>
+                                                        <div
+                                                            class="col-3 col-md-12 px-0 px-md-2 d-flex align-items-center">
+                                                            <a href="#"
+                                                                class="btn btn-primary p-2 px-md-4 mt-lg-1 amenities-text no-curve">Reserve</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -217,11 +211,10 @@
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div class="col-3 col-md-12 px-0 px-md-2">
-                                                            <div class="container px-0">
-                                                                <a href="#"
-                                                                    class="btn btn-primary p-2 px-md-4 mt-lg-1 amenities-text no-curve">Reserve</a>
-                                                            </div>
+                                                        <div
+                                                            class="col-3 col-md-12 px-0 px-md-2 d-flex align-items-center">
+                                                            <a href="#"
+                                                                class="btn btn-primary p-2 px-md-4 mt-lg-1 amenities-text no-curve">Reserve</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -266,11 +259,10 @@
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div class="col-2 col-md-12 px-0 px-md-2">
-                                                            <div class="container px-0">
-                                                                <a href="#"
-                                                                    class="btn btn-primary p-2 px-md-4 mt-lg-1 amenities-text no-curve">Reserve</a>
-                                                            </div>
+                                                        <div
+                                                            class="col-2 col-md-12 px-0 px-md-2 d-flex align-items-center">
+                                                            <a href="#"
+                                                                class="btn btn-primary p-2 px-md-4 mt-lg-0 mt-xl-3 mt-xxl-0 amenities-text no-curve">Reserve</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -282,16 +274,9 @@
                         </div>
                     </div>
                 </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Our Rooms Tablet Responsive -->
-    <div class="container-fluid d-none d-md-block d-lg-none bg-img-bg2" id="rooms-responsive-section">
-        <div class="row">
-            <div class="col d-flex justify-content-center">
-                <div class="container mt-5">
+                <!-- room cards end -->
+                <!-- tablet responsive -->
+                <div class="container mt-5 d-none d-md-block d-lg-none">
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center">
                             <p class="our-rooms-header hero-1-text mb-0">Our Rooms</p>
@@ -405,6 +390,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- tablet responsive end -->
             </div>
         </div>
     </div>
